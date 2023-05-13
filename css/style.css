@@ -13,10 +13,6 @@
     font-style: normal;
 }
 
-.distance{
-    margin-top: 120px;
-}
-
 button{
     font-family: inherit;
     cursor: pointer;
@@ -49,28 +45,28 @@ body{
 }
 
 .container {
-    width: 1200px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.flexing{
+    display: flex;
+}
 
 .page-header{
- height: 72px;
+    border-bottom: 1px solid #e7e9fc;
+    display: flex;
 }
 
 .page-navigation{
     display: flex;
     padding-right: 332px;
-    
+    align-items: center;
 }   
 
-.page_wrp{
-    display: flex;
-    padding-top: 24px;
-}
 
 .logo-web{
     font-weight: 800;
@@ -80,7 +76,7 @@ body{
     text-transform: uppercase;
     color:#4D5AE5;
     font-family: var(--secondary-font-family-family);
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .logo-studio{
@@ -89,12 +85,18 @@ body{
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
     width: 261px;
+}
+
+.menu-item{
+    padding: 24px 0;
 }
 
 .menu-contacts{
     display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .menu-contacts-link:hover,
@@ -123,9 +125,7 @@ color: #404bbf;
     
 }
 
-[href="mailto:info@devstudio.com"]{
-    margin-right: 40px;
-}
+
 
 
 .contacts-link:hover,
@@ -135,7 +135,7 @@ color: #404bbf;
 
 .hero{
     background-color: var(--accent-color);
-    height: 600px;
+    padding: 188px 0;
 }
 
 .hero-title{
@@ -145,15 +145,14 @@ color: #404bbf;
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-top: 188px;
-    width: 496px;
+    max-width: 496px;
     display: block;
     margin: 0 auto;
 }
 
 .hero-modal-button{
     color: #fff;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     left: 636px;
     top: 428px;
@@ -167,6 +166,7 @@ color: #404bbf;
     margin: 0 auto;
     margin-top: 48px;
     display: block;
+    border: none;
 }
 
 .hero-modal-button:hover,
@@ -174,12 +174,17 @@ color: #404bbf;
     background-color: #404BBF;
 }
 
+.studio{
+    padding: 120px 0;
+}
+
 .studio-wrp{
     display: flex;
 }
 
-.studio-item:not(:last-child){
-    margin-right: 24px;
+.studio-item{
+    width: calc((100% - 72px) / 4);
+    margin-right: 21px;
 }
 
 .studio-item-title{
@@ -188,6 +193,7 @@ color: #404bbf;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-bottom: 8px;
 }
 
 .studio-descr{
@@ -195,13 +201,17 @@ color: #404bbf;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-top: 8px;
+}
+
+.work{
+    padding-bottom: 120px;
 }
 
 .work-wrp{
     padding-top: 72px;
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
+    width: calc((100% - 48px) / 3);
 }
 
 .work-title{
@@ -212,17 +222,19 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .contacts{
     background-color: #F4F4FD;
+    padding: 120px 0
 }
 
 .contacts-wrp{
     padding-top: 72px;
     display: flex;
     padding-bottom: 120px;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .contacts-title{
@@ -232,13 +244,18 @@ color: #404bbf;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--accent-color);
-    padding-top: 120px;
+    margin-bottom: 72px
 }
 
 .contacts-item{
     background: #fff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+}
+
+.contacts-descr{
+    padding: 32px 16px;
 }
 
 .contacts-employee{
@@ -248,7 +265,7 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-align: center;
-    padding-top: 32px;
+    margin-bottom: 8px
 }
 
 .contacts-job{
@@ -257,17 +274,18 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding: 8px 0 32px 0;
+
 }
 
 .footer{
     background-color: var(--accent-color);
     height: 312px;
+    padding: 100px 0
 }
 
-.footer-wrp{
-    padding-top: 100px;
-    width: 264px;
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px
 }
 
 .footer-studio {
@@ -279,7 +297,7 @@ color: #404bbf;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    padding-top: 16px;
+    max-width: 264px
 }
 
 .portfolio-filters{

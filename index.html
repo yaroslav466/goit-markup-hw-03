@@ -7,14 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>WebStudio</title>
 </head>
 <body> 
     <header class="page-header">
-        <div class="container">
-            <div class="page_wrp">
+        <div class="container flexing">
         <nav class="page-navigation">
             <a class="logo link" href="./index.html">
                 <p class="logo-web">Web<span class="logo-studio">Studio</span></p>
@@ -30,7 +29,7 @@
                    <a class="menu-link link"  href="">Contacts</a>
                 </li>
             </ul>
-        </nav>
+            </nav>
         <address class="menu-contacts">
             <ul class="menu-contacts list">
                 <li class="menu-contacts-item">
@@ -41,8 +40,8 @@
                 </li>
             </ul>
         </address>
+        
         </div>
-        </div>  
     </header>
 
     <main>
@@ -57,7 +56,7 @@
         <section class="studio" id="studio">
             <div class="container">
             <h2 hidden class="std">studio</h2>
-            <ul class="studio-wrp list distance">
+            <ul class="studio-wrp list">
                 <li class="studio-item">
                     <h3 class="studio-item-title">Strategy</h3>
                     <p class="studio-descr">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
@@ -80,7 +79,7 @@
         <!-- WORK -->
         <section class="work">
             <div class="container">
-            <h2 class="work-title distance">What are we doing</h2>
+            <h2 class="work-title">What are we doing</h2>
             <ul class="work-wrp list">
                 <li class="work-item">
                     <img class="work-img" src="./images/computer.jpg" alt="computer" width="360" height="300">
@@ -97,27 +96,35 @@
 
         <section class="contacts" id="contacts">
             <div class="container">
-            <h2 class="contacts-title distance">Our Team</h2>
+            <h2 class="contacts-title">Our Team</h2>
             <ul class="contacts-wrp list">
                 <li class="contacts-item">
                     <img class="contacts-img" src="./images/mark.jpg" alt="mark guerrero" width="264" height="260">
+                    <div class="contacts-descr">
                     <h3 class="contacts-employee">Mark Guerrero</h3>
                     <p class="contacts-job">Product Designer</p>
+                    </div>
                 </li>
                 <li class="contacts-item">
                     <img class="contacts-img" src="./images/tom.jpg" alt="tom ford" width="264" height="260">
+                    <div class="contacts-descr">
                     <h3 class="contacts-employee">Tom Ford</h3>
                     <p class="contacts-job">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="contacts-item">
                     <img class="contacts-img" src="./images/camila.jpg" alt=" camila garcia" width="264" height="260">
+                    <div class="contacts-descr">
                     <h3 class="contacts-employee">Camila Garcia</h3>
                     <p class="contacts-job">Marketing</p>
+                    </div>
                 </li>
                 <li class="contacts-item">
                     <img class="contacts-img" src="./images/daniel.jpg" alt="daniel wilson" width="264" height="260">
+                    <div class="contacts-descr">
                     <h3 class="contacts-employee">Daniel Wilson</h3>
                     <p class="contacts-job">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -125,10 +132,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-wrp">
         <a class="footer-logo link" href="./index.html">
-            <p class="logo-web">Web<span class="footer-studio">Studio</span></p>
-        </a>
+            <p class="logo-web">Web<span class="footer-studio">Studio</span></p> </a>
         <p class="footer-descr">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
         </div>
