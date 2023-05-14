@@ -67,6 +67,10 @@ body{
     align-items: center;
 }   
 
+.logo{
+    margin-right: 76px;
+}
+
 
 .logo-web{
     font-weight: 800;
@@ -76,7 +80,7 @@ body{
     text-transform: uppercase;
     color:#4D5AE5;
     font-family: var(--secondary-font-family-family);
-    margin-right: 76px;
+    
 }
 
 .logo-studio{
@@ -110,6 +114,7 @@ body{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -180,11 +185,11 @@ color: #404bbf;
 
 .studio-wrp{
     display: flex;
+    gap: 24px;
 }
 
 .studio-item{
     width: calc((100% - 72px) / 4);
-    margin-right: 21px;
 }
 
 .studio-item-title{
@@ -207,11 +212,15 @@ color: #404bbf;
     padding-bottom: 120px;
 }
 
+
+.work-item{
+    width: calc((100% - 48px) / 3);
+}
+
 .work-wrp{
     padding-top: 72px;
     display: flex;
     gap: 24px;
-    width: calc((100% - 48px) / 3);
 }
 
 .work-title{
